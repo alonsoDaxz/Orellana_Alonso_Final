@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sistema de Seminario Gastronómico</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="display-4">Sistema de Seminario Gastronómico</h1>
+        <div class="my-4">
+            <a href="{% url 'inscrito-list-create' %}" class="btn btn-primary btn-lg mr-2">Listado de Inscritos</a>
+            <a href="{% url 'inscrito-create' %}" class="btn btn-primary btn-lg mr-2">Formulario de Inscripción</a>
+            <a href="{% url 'institucion-list-create' %}" class="btn btn-primary btn-lg mr-2">Listado de Instituciones</a>
+            <a href="{% url 'institucion-create' %}" class="btn btn-primary btn-lg mr-2">Formulario de Instituciones</a>
+            <a href="{% url 'author-info' %}" class="btn btn-primary btn-lg">Información del Autor (API)</a>
+        </div>
+    </div>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
